@@ -59,9 +59,13 @@ print(laLista)
 #Ejemplo: length_and_value (6,2) debería devolver [2,2,2,2,2,2]
 
 def longitud(tamano , valor):
-    print(tamano ,valor)
+    lista = []
+    for x in range(tamano):
+        lista.append(valor)
+    return lista
 
 largo = 5
 elValor = 2
 llamado  = longitud(largo ,elValor)
+print(llamado)
 

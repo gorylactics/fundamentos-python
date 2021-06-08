@@ -32,5 +32,6 @@ for i in range(lowNow , highLow+1 ,1 ):
 # imprima solo los enteros que son múltiplos de mult. Por ejemplo, si lowNum = 2, highNum = 9 y mult = 3, 
 # el bucle debe imprimir 3, 6, 9 (en líneas sucesivas)
 #BONUS: ¿Cómo se puede detectar si un número es primo? ¿Cómo retornar una lista con los primos entre el 1 y el 1000?
-
-#for x in range (2 ,1000+1):
+conteo = 1001
+for x in range (1, conteo):
+    print(x)
