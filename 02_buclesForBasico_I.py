@@ -13,7 +13,7 @@ for i in range(1 ,101 , 1):
         print(i)
 
 contador = 0
-for i in range(0 , 100 , 1):
+for i in range(0 , 500000 , 1):
     if i%2==1:
         contador += i
         print(contador)
