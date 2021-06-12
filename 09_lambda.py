@@ -1,9 +1,9 @@
 class Underscore:
     def map(self, iterable, callback):
         lista = []
-        for i in iterable:
+        for i in range(len(iterable)):
             if callback(i):
-                lista.append(i)
+                lista.append(callback(iterable[i]))
         return lista
 
     def find(self, iterable, callback):
@@ -24,7 +24,7 @@ class Underscore:
     def reject(self, iterable, callback):
         lista = []
         for i in iterable:
-            if callback(i):
+            if callback(i) == False:
                 lista.append(i)
         return lista
 
@@ -37,4 +37,4 @@ _ = Underscore() # sí, estamos configurando una instancia a una variable que es
 print(_.map([1,2,3], lambda x: x*2)) #  debe retornar [2,4,6]
 print(_.find([1,2,3,4,5,6], lambda x: x>4)) # debe retornar el primer valor que es mayor que 4
 print(_.filter([1,2,3,4,5,6], lambda x: x%2==0)) # debe retornar [2,4,6]
-print(_.reject([1,2,3,4,5,6], lambda x: x%2==1)) # debe retornar [1,3,5]
+print(_.reject([1,2,3,4,5,6], lambda x: x%2==0)) # debe retornar [1,3,5]
